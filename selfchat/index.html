@@ -27,12 +27,7 @@
 @media(max-width:760px){.wrap{width:min(100% - 34px,560px)}.nav{height:70px}.navlinks{gap:15px}.navlinks a:not(.navcta){display:none}.navcta{padding:10px 15px;font-size:12px}.hero{grid-template-columns:1fr;gap:18px;padding:57px 0 52px;min-height:0}.hero h1{font-size:clamp(49px,12vw,67px)}.hero .lead{font-size:16px}.visual{min-height:390px;margin:4px 0 0}.phone{width:218px}.screen{min-height:365px}.chat{padding-top:13px}.sun{width:210px;height:210px;right:20px;top:35px}.note1{left:0;top:95px}.note2{right:-2px;bottom:24px}.section{padding:64px 0}.features{grid-template-columns:1fr;gap:12px}.feature{min-height:0;padding:24px}.iconbox{margin-bottom:16px}.quote{padding:62px 8px}.faqgrid{grid-template-columns:1fr;gap:24px}.faqintro p{max-width:480px}.finalcta{padding:50px 20px;margin-bottom:55px}.footer{align-items:flex-start;flex-direction:column}.footerlinks{gap:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 .grad{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em}.finalcta .eyebrow{color:#d8f6e8}.finalcta h2{color:#fff}.finalcta .button{background:#fff;color:#0f6b59}.finalcta .button:hover{background:#eafaf2}
-/* The phone mockup always shows the app's own light-themed UI, like a
-   real device screenshot would — it has its own fixed colors (see
-   .phone/.screen and descendants above) and is deliberately left out
-   of this override. This block must stay last in the stylesheet: it
-   reuses selectors already defined above with equal specificity, and
-   CSS breaks those ties by source order, not by media-query nesting. */
+/* Dark theme overrides, including the phone mockup (shown in its dark UI). Keep this block last. */
 :root[data-theme="dark"]{color-scheme:dark;--paper:#0c1714;--paper2:#12211c;--ink:#e6f1ec;--muted:#9db3aa;--green:#127a5f;--green2:#173a2f;--line:rgba(200,240,225,.12);--grad-text:linear-gradient(90deg,#5fe0a3,#2bbf98 55%,#3fae9c)}
 [data-theme="dark"] .nav{border-bottom-color:rgba(200,240,225,.12)}
 [data-theme="dark"] .eyebrow{color:#6fd3a4}
@@ -51,6 +46,18 @@
 [data-theme="dark"] .textlink{border-bottom-color:#2f6b58}
 [data-theme="dark"] .navcta:hover,[data-theme="dark"] .button:hover{background:#12735a}
 [data-theme="dark"] .finalcta .button{background:#e9f8f1;color:#0c5c4f}
+[data-theme="dark"] .phone{border-color:#2e4d42;background:#0a1411;color:#e6f1ec;box-shadow:0 25px 60px rgba(0,0,0,.5)}
+[data-theme="dark"] .screen{background:#0f1a17}
+[data-theme="dark"] .status{color:#8ea59c}
+[data-theme="dark"] .appbar{border-bottom-color:rgba(200,240,225,.08)}
+[data-theme="dark"] .avatar{background:#173a2f;color:#6fd3a4}
+[data-theme="dark"] .appsub{color:#8ea59c}
+[data-theme="dark"] .day{color:#7b928a}
+[data-theme="dark"] .right{background:#1d4a3b;color:#e6f6ee}
+[data-theme="dark"] .bubble{box-shadow:none}
+[data-theme="dark"] .time{color:#9cc7b6}
+[data-theme="dark"] .reminder{border-color:rgba(111,211,164,.25);background:#12261f;color:#cdeedd}
+[data-theme="dark"] .compose{border-color:rgba(200,240,225,.1);background:#13221d;color:#8ea59c}
 </style>
 </head>
 <body>
