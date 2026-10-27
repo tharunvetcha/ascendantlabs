@@ -20,13 +20,14 @@ index.html              Studio site (single page, inline CSS/JS)
 404.html                Not-found page
 selfchat/index.html     Self Chat app site
 selfchat/img/           Self Chat icon and share image
-assets/                 Logos (incl. 512px originals) and share image
+assets/                 Logos (glossy PNGs, vector SVG, high-res) and share image
+assets/fonts/           Inter brand font (self-hosted, SIL OFL)
 favicon.ico, favicon.png, apple-touch-icon.png
 sitemap.xml             Submitted to Google Search Console
 .nojekyll               Serve files as-is (skip Jekyll)
 ```
 
-Plain HTML/CSS with no build step. Light and dark themes follow the device setting, with a toggle that remembers the visitor's choice across both sites.
+Plain HTML/CSS with no build step. Brand: Inter for the wordmark and UI, Georgia for headlines. Light and dark themes follow the device setting, with a toggle that remembers the visitor's choice across both sites.
 
 ## Publishing
 
@@ -34,4 +35,4 @@ Served by GitHub Pages from the `main` branch, root folder. Changes go live a mi
 
 ## Contact
 
-hello.ascendantlabs@gmail.com
+Use the Contact link on the [website](https://tharunvetcha.github.io/ascendantlabs/).
